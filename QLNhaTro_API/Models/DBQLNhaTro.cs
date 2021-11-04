@@ -10,6 +10,7 @@ namespace QLNhaTro_API.Models
         public DBQLNhaTro()
             : base("name=DBQLNhaTro")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
